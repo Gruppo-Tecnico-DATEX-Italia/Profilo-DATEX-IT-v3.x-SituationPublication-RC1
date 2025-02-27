@@ -1,0 +1,163 @@
+Namespace;Package nam;Class name;Designation;Definition;Stereotype;Abstract
+Situation;Accident;Accident;Accident;Accidents are events where one or more vehicles are involved in collisions or in leaving the roadway. These include collisions between vehicles or with other road users or obstacles.;;No
+Situation;Activity;Activity;Activity;Deliberate human action external to the traffic stream or roadway which could disrupt traffic.;;Yes
+Situation;Activity;AuthorityOperation;Authority operation;Authority initiated operation or activity that could disrupt traffic.;;No
+Situation;Activity;DisturbanceActivity;Disturbance activity;Deliberate human action of either a public disorder nature or of a situation alert type which could disrupt traffic.;;No
+Situation;Activity;PublicEvent;Public event;Organised public event which could disrupt traffic.;;No
+LocationReferencing;AlertC;AlertCDirection;ALERT-C direction;The direction of traffic flow along the road to which the information relates.;;No
+LocationReferencing;AlertC;AlertCLinear;ALERT-C linear;A linear section along a road defined between two points on the road by reference to a pre-defined ALERT-C location table.;;Yes
+LocationReferencing;AlertC;AlertCLocation;ALERT-C location;Identification of a specific point, linear or area location in an ALERT-C location table.;;No
+LocationReferencing;AlertC;AlertCMethod2PrimaryPointLocation;ALERT-C method2 primary point location;The point (called Primary point) which is either a single point or at the downstream end of a linear road section. The point is specified by a reference to a point in a pre-defined ALERT-C location table.;;No
+LocationReferencing;AlertC;AlertCMethod2SecondaryPointLocation;ALERT-C method2 secondary point location;The point (called Secondary point) which is at the upstream end of a linear road section. The point is specified by a reference to a point in a pre-defined ALERT-C location table.;;No
+LocationReferencing;AlertC;AlertCMethod4PrimaryPointLocation;ALERT-C method4 primary point location;The point (called Primary point) which is either a single point or at the downstream end of a linear road section. The point is specified by a reference to a point in a pre-defined ALERT-C location table plus a non-negative offset distance.;;No
+LocationReferencing;AlertC;AlertCMethod4SecondaryPointLocation;ALERT-C method4 secondary point location;The point (called Secondary point) which is at the upstream end of a linear road section. The point is specified by a reference to a point in a pre-defined Alert-C location table plus a non-negative offset distance.;;No
+LocationReferencing;AlertC;AlertCPoint;ALERT-C point;A single point on the road network defined by reference to a pre-defined ALERT-C location table and which has an associated direction of traffic flow.;;Yes
+LocationReferencing;AlertCArea;AlertCArea;ALERT-C area;An area defined by reference to a predefined ALERT-C location table.;;No
+LocationReferencing;AlertCLinearByCode;AlertCLinearByCode;ALERT-C linear by code;A linear section along a road defined by reference to a linear section in a pre-defined ALERT-C location table.;;No
+LocationReferencing;AlertCMethod2Linear;AlertCMethod2Linear;ALERT-C method2 linear;A linear section along a road between two points, primary and secondary, which are pre-defined in an ALERT-C location table. Direction is FROM the secondary point TO the primary point, i.e. the primary point is downstream of the secondary point.;;No
+LocationReferencing;AlertCMethod2Point;AlertCMethod2Point;ALERT-C method2 point;A single point on the road network defined by reference to a point in a pre-defined ALERT-C location table and which has an associated direction of traffic flow.;;No
+LocationReferencing;AlertCMethod4Linear;AlertCMethod4Linear;ALERT-C method4 linear;A linear section along a road between two points, primary and secondary, which are pre-defined ALERT-C locations plus offset distance. Direction is FROM the secondary point TO the primary point, i.e. the primary point is downstream of the secondary point.;;No
+LocationReferencing;AlertCMethod4Point;AlertCMethod4Point;ALERT-C method4 point;A single point on the road network defined by reference to a point in a pre-defined ALERT-C location table plus an offset distance and which has an associated direction of traffic flow.;;No
+Situation;Classes;Cause;Cause;Contains details of the cause of a record within a situation;;No
+Situation;Classes;Comment;Comment;A free text comment with an optional date/time stamp that can be used by the operator to convey un-coded observations/information.;;No
+Situation;Classes;DetailedCauseType;Detailed cause type;The type of influence that may be the cause of components of a situation. At least one attribute must be populated.;;No
+Situation;Classes;GenericSituationRecord;Generic situation record;A generic SituationRecord for use when adding level B extensions at the SituationRecord level.;;No
+Common;Classes;GlobalReference;Global reference;A versioned reference to an object that may be in another publication from another publisher.;;Yes
+Situation;Classes;GroupOfPeopleInvolved;Group of people involved;Group of people involved in the event having common characteristics and/or status.;;No
+Common;Classes;GroupOfVehiclesInvolved;Group of vehicles involved;Group of the vehicles involved having common characteristics and/or status.;;No
+Common;Classes;HazardousMaterials;Hazardous materials;Details of hazardous materials.;;No
+Common;Classes;HeaderInformation;Header information;Management information relating to the data contained within a publication.;;No
+Common;Classes;InternationalIdentifier;International identifier;An identifier/name whose range is specific to the particular country.;;No
+Situation;Classes;Mobility;Mobility;An indication of whether the associated instance of a SituationRecord is mobile (e.g. a march or parade moving along a road) or stationary.;;No
+Common;Classes;PayloadPublication;Payload publication;A payload publication of traffic related information or associated management information created at a specific point in time that can be exchanged via a DATEX II interface.;;Yes
+Situation;Classes;Situation;Situation;An identifiable instance of a traffic/travel situation comprising one or more traffic/travel circumstances which are linked by one or more causal relationships. Each traffic/travel circumstance is represented by a Situation Record.;;No
+Situation;Classes;SituationRecord;Situation record;An identifiable versioned instance of a single record/element within a situation.;;Yes
+Common;Classes;Source;Source;Details of the source from which the information was obtained.;;No
+Common;Classes;UrlLink;URL link;Details of a Uniform Resource Locator (URL) address pointing to a resource available on the Internet from where further relevant information may be obtained.;;No
+Situation;Conditions;Conditions;Conditions;Any conditions which have the potential to degrade normal driving conditions.;;No
+Situation;Conditions;NonWeatherRelatedRoadConditions;Non weather related road conditions;Road surface conditions that are not related to the weather but which may affect driving conditions.;;No
+Situation;Conditions;PoorEnvironmentConditions;Poor environment conditions;Any environmental conditions which may be affecting the driving conditions on the road.;;No
+Situation;Conditions;RoadSurfaceConditions;Road surface conditions;Conditions of the road surface which may affect driving conditions. These may be related to the weather (e.g. ice, snow etc.) or to other conditions (e.g. oil, mud, leaves etc. on the road);;Yes
+Situation;Conditions;WeatherRelatedRoadConditions;Weather related road conditions;Road surface conditions that are related to the weather which may affect the driving conditions, such as ice, snow or water.;;No
+Common;DataValue;DataValue;Data value;A data value of something that can be measured or calculated. Any provided meta-data values specified in the attributes override any specified generic characteristics such as defined for a specific measurement in the MeasurementSiteTable. ;;Yes
+RoadTrafficData;DataValue;DateTimeValue;Date time value;A measured or calculated value of an instant in time.;;No
+Common;DataValue;FrictionValue;Friction value;A measured or calculated value of road surface friction.;;No
+Common;DataValue;IntegerMetreDistanceValue;Integer metre distance value;A measured or calculated value of distance in whole metres.;;No
+Common;DataValue;SpeedValue;Speed value;A measured or calculated value of speed.;;No
+Common;DataValue;VehicleFlowValue;Vehicle flow value;A measured or calculated value of the flow rate of vehicles.;;No
+LocationReferencing;Gml;GmlLinearRing;Gml linear ring;Closed line string not self-intersecting (i.e. having as last point the first point);;No
+LocationReferencing;Gml;GmlLineString;Gml line string;Line string based on GML (EN ISO 19136) definition: a curve defined by a series of two or more coordinate tuples. Unlike GML may be self-intersecting. If srsName attribute is not present, posList is assumed to use "ETRS89-LatLonh" reference system.;;No
+LocationReferencing;Gml;GmlMultiPolygon;Gml multi polygon;An area defined by a set of polygons acording to GML (EN ISO 19136).;;No
+LocationReferencing;Gml;GmlPolygon;Gml polygon;Planar surface defined by 1 exterior boundary and 0 or more interior boundaries;;No
+Situation;Impact;Delays;Delays;The details of the delays being caused by the situation element defined in the situation record. It is recommended to only use one of the optional attributes to avoid confusion.;;No
+Situation;Impact;Impact;Impact;An assessment of the impact that an event or operator action defined by the situation record has on the driving conditions.;;No
+LocationReferencing;LinearWithinLinearElement;LinearWithinLinearElement;Linear within linear element;A linear section along a linear element where the linear element is either a part of or the whole of a linear object (i.e. a road), consistent with ISO 19148 definitions. ;;No
+LocationReferencing;LocationReference;AreaDestination;Area destination;The specification of the destination of a defined route or itinerary which is an area.;;No
+LocationReferencing;LocationReference;AreaLocation;Area location;Location representing a geographic or geometric defined area which may be qualified by height information to provide additional geospatial discrimination (e.g. for snow in an area but only above a certain altitude).;;No
+LocationReferencing;LocationReference;Destination;Destination;The specification of a destination. This may be either a point location or an area location.;;Yes
+LocationReferencing;LocationReference;ExternalReferencing;External referencing;A location defined by reference to an external/other referencing system.;;No
+LocationReferencing;LocationReference;Itinerary;Itinerary;Multiple (i.e. more than one) physically separate locations arranged as an ordered set that defines an itinerary or route.;;Yes
+LocationReferencing;LocationReference;ItineraryByIndexedLocations;Itinerary by indexed locations;Multiple physically separate locations arranged as an ordered set that defines an itinerary or route. The index qualifier indicates the order.;;No
+LocationReferencing;LocationReference;ItineraryByReference;Itinerary by reference;Multiple (i.e. more than one) physically separate locations which are ordered that constitute an itinerary or route where they are defined by reference to a predefined itinerary.;;No
+LocationReferencing;LocationReference;LinearLocation;Linear location;Location representing a linear section with optional directionality defined between two points. ;;No
+LocationReferencing;LocationReference;Location;Location;The specification of a location either on a network (as a point or a linear location) or as an area. This may be provided in one or more referencing systems.;;Yes
+LocationReferencing;LocationReference;LocationByReference;Location by reference;A location defined by reference to a predefined location.;;No
+LocationReferencing;LocationReference;LocationReference;Location reference;Represents one or more physically separate locations. Multiple locations may be related, as in an itinerary or route, or may be unrelated. One LocationReference should not use multiple Location objects to represent the same physical location.;;Yes
+LocationReferencing;LocationReference;NetworkLocation;Network location;The specification of a location on a network (as a point or a linear location).;;Yes
+LocationReferencing;LocationReference;OffsetDistance;Offset distance;The non-negative offset distance from the ALERT-C referenced point to the actual point.;;No
+LocationReferencing;LocationReference;PointDestination;Point destination;The specification of the destination of a defined route or itinerary which is a point.;;No
+LocationReferencing;LocationReference;PointLocation;Point location;Location representing a single geospatial point.;;No
+LocationReferencing;LocationReference;SingleRoadLinearLocation;Single road linear location;Location representing a linear section along a single road with optional directionality defined between two points on the same road. No matter the kind of linear reference it uses, the constraint of using only a single road must be preserved.;;No
+LocationReferencing;NamedArea;IsoNamedArea;Iso named area;The ISO 3166-2 representation for the named area.;;No
+LocationReferencing;NamedArea;NamedArea;Named area;An area defined by a name and/or in terms of known boundaries, such as country or county boundaries or allocated control area of particular authority. The attributes do not form a union; instead, the smallest intersection forms the resulting area.;;No
+LocationReferencing;NamedArea;NutsNamedArea;Nuts named area;The NUTS-Code representation for the named area (Nomenclature of territorial units for statistics) or its LAU code representation (Local Administrative Unit).;;No
+Situation;NetworkManagement;GeneralInstructionOrMessageToRoadUsers;General instruction or message to road users;General instruction and/or message that is issued by the network/road operator which is applicable to drivers and sometimes passengers.;;No
+Situation;NetworkManagement;GeneralNetworkManagement;General network management;Network management action that is instigated either manually or automatically by the network/road operator.  Compliance with any resulting control may be advisory or mandatory.;;No
+Situation;NetworkManagement;NetworkManagement;Network management;Network management action which is applicable to the road network and its users.;;Yes
+Situation;NetworkManagement;ReroutingManagement;Rerouting management;Rerouting management action that is issued by the network/road operator.;;No
+Situation;NetworkManagement;RoadOrCarriagewayOrLaneManagement;Road or carriageway or lane management;Road, carriageway or lane management action that is instigated by the network/road operator.;;No
+Situation;NetworkManagement;SpeedManagement;Speed management;Speed management action that is instigated by the network/road operator.;;No
+Situation;NetworkManagement;WinterDrivingManagement;Winter driving management;Winter driving management action that is instigated by the network/road operator.;;No
+Situation;Obstruction;AnimalPresenceObstruction;Animal presence obstruction;An obstruction on the road resulting from the presence of animals.;;No
+Situation;Obstruction;EnvironmentalObstruction;Environmental obstruction;An obstruction on the road resulting from an environmental cause.;;No
+Situation;Obstruction;GeneralObstruction;General obstruction;Any stationary or moving obstacle of a physical nature, other than of an animal, vehicle, environmental, or damaged equipment nature.;;No
+Situation;Obstruction;InfrastructureDamageObstruction;Infrastructure damage obstruction;An obstruction on the road resulting from the failure or damage of infrastructure on, under, above or close to the road.;;No
+Situation;Obstruction;Obstruction;Obstruction;Any stationary or moving obstacle of a physical nature (e.g. obstacles or vehicles from an earlier accident, shed loads on carriageway, rock fall, abnormal or dangerous loads, or animals etc.) which could disrupt or endanger traffic.;;Yes
+Situation;Obstruction;VehicleObstruction;Vehicle obstruction;An obstruction on the road caused by one or more vehicles.;;No
+LocationReferencing;OpenLR;OpenlrBaseReferencePoint;Openlr base reference point;Base class used to hold data about a reference point.;;Yes
+LocationReferencing;OpenLR;OpenlrLineAttributes;Openlr line attributes;Line attributes are part of a location reference point and consists of functional road class (FRC),form of way (FOW) and bearing (BEAR) data.;;No
+LocationReferencing;OpenLR;OpenlrOffsets;Openlr offsets;Offsets are used to locate the start and end of a location more precisely than bounding to the nodes in a network.;;No
+LocationReferencing;OpenLR;OpenlrPathAttributes;Openlr path attributes;Properties of the path from the associated location reference point to the next location reference point, which are specified to assist correct identification of the point in an external map data source.;;No
+LocationReferencing;OpenlrArea;OpenlrAreaLocationReference;Openlr area location reference;A two-dimensional part of the surface of the earth which is bounded by a closed curve. An area location may cover parts of the road network but does not necessarily need to. It is represented according to the OpenLR standard for Area Locations;;Yes
+LocationReferencing;OpenlrArea;OpenlrCircleLocationReference;Openlr circle location reference;The OpenLR method of area definition by providing a center position and a radius;;No
+LocationReferencing;OpenlrArea;OpenlrClosedLineLocationReference;Openlr closed line location reference;The OpenLR method of area definition by providing a closed path (i.e. a circuit) in the road network.
+The boundary always consists of road segments;;No
+LocationReferencing;OpenlrArea;OpenlrGridLocationReference;Openlr grid location reference;Area defined using an OpenLR™ method consisting in defining it by a tessellation of rectangles;;No
+LocationReferencing;OpenlrArea;OpenlrPolygonCorners;Openlr polygon corners;A geodetic coordinate Tuple that defines the vertices of the underlying geometrical polygon.;;No
+LocationReferencing;OpenlrArea;OpenlrPolygonLocationReference;Openlr polygon location reference;The OpenLR method of area definition by providing points that bound the area;;No
+LocationReferencing;OpenlrArea;OpenlrRectangle;Openlr rectangle;Area delimited by a rectangle defined by the geodetic co-ordinates of the two ends of its diagonal from south-west to north-east (the rectangle having two sides that are parallel to lines of latitude);;No
+LocationReferencing;OpenlrArea;OpenlrRectangleLocationReference;Openlr rectangle location reference;The openLR method of area definition by providing a rectangular shape defined by two geo-coordinate pairs;;No
+LocationReferencing;OpenlrLinear;OpenlrLinear;Openlr linear;OpenLR line location reference;;No
+LocationReferencing;OpenlrLinear;OpenlrLineLocationReference;Openlr line location reference;A line location reference is defined by an ordered sequence of location reference points and a terminating last location reference point.;;No
+LocationReferencing;OpenlrPoint;OpenlrBasePointLocation;Openlr base point location;Holds common data that are used both in OpenlrPointAccessPoint and OpenlrPointAlongLine.;;Yes
+LocationReferencing;OpenlrPoint;OpenlrGeoCoordinate;Openlr geo coordinate;A geo-coordinate pair is a position in a map defined by its longitude and latitude coordinate values.;;No
+LocationReferencing;OpenlrPoint;OpenlrLastLocationReferencePoint;Openlr last location reference point;The sequence of location reference points is terminated by a last location reference point.;;No
+LocationReferencing;OpenlrPoint;OpenlrLocationReferencePoint;Openlr location reference point;The basis of a location reference is a sequence of location reference points (LRPs).;;No
+LocationReferencing;OpenlrPoint;OpenlrPointAlongLine;Openlr point along line;Point along a line;;No
+LocationReferencing;OpenlrPoint;OpenlrPointLocationReference;Openlr point location reference;A point location is a zero-dimensional element in a map that specifies a geometric location.;;Yes
+LocationReferencing;OpenlrPoint;OpenlrPoiWithAccessPoint;Openlr poi with access point;A point of interest (POI) along a line with access is a point location which is defined by a linear reference path, an offset value (defining the access point) from the starting node of this path and a coordinate pair that defines the POI itself.;;No
+Situation;OperatorAction;OperatorAction;Operator action;Actions that an authorised operator can decide to implement to prevent or help correct dangerous or poor driving conditions, or any actions affecting normal operation of a road.;;Yes
+LocationReferencing;PointAlongLinearElement;DistanceAlongLinearElement;Distance along linear element;Distance of a point along a linear element either measured from the start node or a defined referent on that linear element, where the start node is relative to the element definition rather than the direction of traffic flow.;;Yes
+LocationReferencing;PointAlongLinearElement;DistanceFromLinearElementReferent;Distance from linear element referent;Distance of a point along a linear element measured from a "from referent" on the linear element, in the sense relative to the linear element definition rather than the direction of traffic flow or optionally towards a "towards referent".;;No
+LocationReferencing;PointAlongLinearElement;DistanceFromLinearElementStart;Distance from linear element start;Distance of a point along a linear element measured from the start node of the linear element, where start node is relative to the element definition rather than the direction of traffic flow.;;No
+LocationReferencing;PointAlongLinearElement;LinearElement;Linear element;A linear element along a single linear object, consistent with EN ISO 19148 definitions. ;;No
+LocationReferencing;PointAlongLinearElement;LinearElementByCode;Linear element by code;A linear element along a single linear object defined by its identifier or code in a road network reference model (specified in LinearElement class) which segments the road network according to specific business rules.;;No
+LocationReferencing;PointAlongLinearElement;LinearElementByLineString;Linear element by line string;A linear element defined by a line string (class GmlLineString).;;No
+LocationReferencing;PointAlongLinearElement;LinearElementByPoints;Linear element by points;A linear element along a single linear object defined by its start and end points.;;No
+LocationReferencing;PointAlongLinearElement;PercentageDistanceAlongLinearElement;Percentage distance along linear element;Distance of a point along a linear element measured from the start node expressed as a percentage of the whole length of the linear element, where start node is relative to the element definition rather than the direction of traffic flow.;;No
+LocationReferencing;PointAlongLinearElement;PointAlongLinearElement;Point along linear element;A point on a linear element where the linear element is either a part of or the whole of a linear object (i.e. a road), consistent with EN ISO 19148 definitions. ;;No
+LocationReferencing;PointAlongLinearElement;Referent;Referent;A referent on a linear object that has a known location such as a node, a reference marker (e.g. a marker-post), an intersection etc.;;No
+LocationReferencing;PointCoordinates;AltitudeConfidence;Altitude confidence;Evaluation of the altitude confidence assessed according to ETSI ISO 102894-2;;No
+LocationReferencing;PointCoordinates;HeightCoordinate;Height coordinate;Third coordinate for points defined geodetically;;No
+LocationReferencing;PointCoordinates;PointByCoordinates;Point by coordinates;A single point defined only by a coordinate set with an optional bearing direction.;;No
+LocationReferencing;PointCoordinates;PointCoordinates;Point coordinates;A pair of planar coordinates defining the geodetic position of a single point using the European Terrestrial Reference System 1989 (ETRS89).;;No
+LocationReferencing;PointCoordinates;PositionAccuracy;Position accuracy;Horizontal position accuracy parameters defined according to EN 16803-1;;No
+LocationReferencing;PointCoordinates;PositionConfidenceEllipse;Position confidence ellipse;Confidence ellipse position defined in a shape of ellipse with a predefined confidence level (e.g. 95 %). The centre of the ellipse shape corresponds to the reference position point for which the position accuracy is evaluated.;;No
+Situation;Roadworks;MaintenanceWorks;Maintenance works;Roadworks involving the maintenance or installation of infrastructure.;;No
+Situation;Roadworks;Roadworks;Roadworks;Road maintenance, installation and construction activities, works in the road, or other construction or maintenance actions that may affect normal operation of a road.;;Yes
+Situation;ServiceInformation;ServiceDisruption;Service disruption;Details of disruption to normal services which may include roadside services such as those available at designated service areas, or any other relevant services such as nearby parking.;;No
+Situation;ServiceInformation;ServiceInformation;Service information;Information about a service which may influence the behaviour of drivers and hence the characteristics of the traffic flow.;;Yes
+Situation;SituationPublication;SituationPublication;Situation publication;A publication containing zero or more traffic/travel situations.;;No
+Situation;SituationPublication;SituationRecordReference;Situation record reference;Reference to a SituationRecord;;No
+Situation;SituationPublication;SituationReference;Situation reference;Reference to a Situation;;No
+LocationReferencing;SupplementaryPositionalDescription;Carriageway;Carriageway;Supplementary positional information which details carriageway and lane locations. Several instances may exist where the element being described extends over more than one carriageway.;;No
+LocationReferencing;SupplementaryPositionalDescription;Lane;Lane;Indicates a specific lane or group of lanes.;;No
+LocationReferencing;SupplementaryPositionalDescription;SupplementaryPositionalDescription;Supplementary positional description;A collection of supplementary positional information which improves the precision of the location.;;No
+LocationReferencing;TpegAreaLocation;TpegAreaLocation;TPEG area location;A geographic or geometric area defined by a TPEG-Loc structure which may include height information for additional geospatial discrimination.;;Yes
+LocationReferencing;TpegAreaLocation;TpegGeometricArea;TPEG geometric area;A geometric area defined by a centre point and a radius.;;No
+LocationReferencing;TpegAreaLocation;TpegHeight;TPEG height;Height information which provides additional discrimination for the applicable area.;;No
+LocationReferencing;TpegAreaLocation;TpegNamedOnlyArea;TPEG named only area;An area defined by a well-known name.;;No
+LocationReferencing;TpegDescriptor;TpegAreaDescriptor;TPEG area descriptor;A descriptor for describing an area location.;;No
+LocationReferencing;TpegDescriptor;TpegDescriptor;TPEG descriptor;A collection of information providing descriptive references to locations using the TPEG-Loc location referencing approach.;;Yes
+Situation;TrafficElement;AbnormalTraffic;Abnormal traffic;A traffic condition which is not normal.;;No
+Situation;TrafficElement;EquipmentOrSystemFault;Equipment or system fault;Equipment or system which is faulty, malfunctioning or not in a fully operational state that may be of interest or concern to road operators and road users.;;No
+Situation;TrafficElement;TrafficElement;Traffic element;An event which is not planned by the traffic operator, which is affecting, or has the potential to affect traffic flow.;;Yes
+Common;Validity;DayWeekMonth;Day week month;Specification of periods defined by the intersection of days or instances of them, calendar weeks and months.;;No
+Common;Validity;OverallPeriod;Overall period;A continuous or discontinuous period of validity defined by overall bounding start and end times and the possible intersection of valid periods (potentially recurring) with the complement of exception periods (also potentially recurring).;;No
+Common;Validity;Period;Period;A continuous time period or a set of discontinuous time periods defined by the intersection of a set of criteria all within an overall delimiting interval.;;No
+Common;Validity;TimePeriodOfDay;Time period of day;Specification of a continuous period of time within a 24 hour period.;;No
+Common;Validity;Validity;Validity;Specification of validity, either explicitly or by a validity time period specification which may be discontinuous.;;No
+Common;Vehicle;AxleSpacing;Axle spacing;The spacing details between the axle sets of an individual vehicle numbered from the front to the back of the vehicle. ;;No
+Common;Vehicle;AxleWeight;Axle weight;The weight details of a specific axle on the vehicle. ;;No
+Common;Vehicle;Vehicle;Vehicle;Details of an individual vehicle.;;No
+Common;VehicleCharacteristics;Emissions;Emissions;Emission characteristics of vehicles.;;No
+Common;VehicleCharacteristics;GrossWeightCharacteristic;Gross weight characteristic;Gross weight characteristic of a vehicle.;;No
+Common;VehicleCharacteristics;HeaviestAxleWeightCharacteristic;Heaviest axle weight characteristic;Weight characteristic of the heaviest axle on the vehicle.;;No
+Common;VehicleCharacteristics;HeightCharacteristic;Height characteristic;Height characteristic of a vehicle.;;No
+Common;VehicleCharacteristics;LengthCharacteristic;Length characteristic;Length characteristic of a vehicle.;;No
+Common;VehicleCharacteristics;NumberOfAxlesCharacteristic;Number of axles characteristic;Number of axles characteristic of a vehicle.;;No
+Common;VehicleCharacteristics;VehicleCharacteristics;Vehicle characteristics;The characteristics of a vehicle, e.g. lorry of gross weight greater than 30 tonnes.;;No
+Common;VehicleCharacteristics;WidthCharacteristic;Width characteristic;Width characteristic of a vehicle.;;No
+Common;WeatherRelated;RoadSurfaceConditionMeasurements;Road surface condition measurements;Measurements of the road surface condition which relate specifically to the weather.;;No
+Common;WeatherRelated;Visibility;Visibility;Details of atmospheric visibility.;;No
+

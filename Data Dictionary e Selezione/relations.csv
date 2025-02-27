@@ -1,0 +1,138 @@
+Namespace;Class name;Association end;Designation;Definition;Multiplicity;Target
+Situation;Accident;;;;0..*;EAID_2B372237_03AA_40b2_9F77_23C368B1BAD6
+Situation;Accident;;;;0..*;EAID_78796365_15FB_4f04_A1D1_37B0891D63D9
+LocationReferencing;AlertCMethod2PrimaryPointLocation;;;;1..1;EAID_5B227414_6989_4551_9FFE_26D05A9331B9
+LocationReferencing;AlertCMethod2SecondaryPointLocation;;;;1..1;EAID_5B227414_6989_4551_9FFE_26D05A9331B9
+LocationReferencing;AlertCMethod4PrimaryPointLocation;;;;1..1;EAID_17D9A0F3_0E2D_4681_9E78_EA4235DC5451
+LocationReferencing;AlertCMethod4PrimaryPointLocation;;;;1..1;EAID_5B227414_6989_4551_9FFE_26D05A9331B9
+LocationReferencing;AlertCMethod4SecondaryPointLocation;;;;1..1;EAID_5B227414_6989_4551_9FFE_26D05A9331B9
+LocationReferencing;AlertCArea;areaLocation;Area location;Area location defined by a specific Alert-C location.;1..1;EAID_5B227414_6989_4551_9FFE_26D05A9331B9
+LocationReferencing;AlertCLinearByCode;;;;1..1;EAID_FBFB44B6_4562_436a_99A2_8D6215A51D68
+LocationReferencing;AlertCLinearByCode;locationCodeForLinearLocation;Location code for linear location;Linear location defined by a specific Alert-C location.;1..1;EAID_5B227414_6989_4551_9FFE_26D05A9331B9
+LocationReferencing;AlertCMethod2Linear;;;;1..1;EAID_FBFB44B6_4562_436a_99A2_8D6215A51D68
+LocationReferencing;AlertCMethod2Linear;;;;1..1;EAID_48305A58_7EA3_41df_AD52_2656C2087928
+LocationReferencing;AlertCMethod2Linear;;;;1..1;EAID_F86AB504_DC39_4afe_B745_84652E9AC4C1
+LocationReferencing;AlertCMethod2Point;;;;1..1;EAID_FBFB44B6_4562_436a_99A2_8D6215A51D68
+LocationReferencing;AlertCMethod2Point;;;;1..1;EAID_48305A58_7EA3_41df_AD52_2656C2087928
+LocationReferencing;AlertCMethod4Linear;;;;1..1;EAID_FBFB44B6_4562_436a_99A2_8D6215A51D68
+LocationReferencing;AlertCMethod4Linear;;;;1..1;EAID_9FA48308_F473_4b49_8428_3BC7F8DDC718
+LocationReferencing;AlertCMethod4Linear;;;;1..1;EAID_CBAE58F4_DF40_412b_89C9_A74F0E3A77E6
+LocationReferencing;AlertCMethod4Point;;;;1..1;EAID_FBFB44B6_4562_436a_99A2_8D6215A51D68
+LocationReferencing;AlertCMethod4Point;;;;1..1;EAID_9FA48308_F473_4b49_8428_3BC7F8DDC718
+Situation;Cause;detailedCauseType;Detailed cause type;The type of cause, expressed in more detail than the NonManagedCause causeType. If both are present then they must be consistent.;0..1;EAID_E9304498_ABD0_46d8_A25F_BC62A7FEFF42
+Situation;Cause;managedCause;Managed cause;A reference to another situation record which defines a cause of the event defined here.;0..1;EAID_BBBA60F5_773B_4be4_99C2_D1A4219205C0
+Common;GroupOfVehiclesInvolved;;;;0..1;EAID_3E56124E_0654_4d2a_B78E_2C7C6A470500
+Common;PayloadPublication;publicationCreator;Publication creator;;1..1;EAID_89F74DD6_CCE5_45aa_93DA_A5DFCEE9D88E
+Situation;Situation;;;Details of the Situation;1..*;EAID_14358B9A_22CA_463c_ADA7_092CBB3D3E14
+Situation;Situation;;;;1..1;EAID_05DC7325_F646_4785_9C7D_781F75F4612D
+Situation;Situation;informationManager;Information manager;Organisation that manages the information content (is responsible for updates of this information) typically the organisation that first made the DATEX II publication of this content.;0..1;EAID_89F74DD6_CCE5_45aa_93DA_A5DFCEE9D88E
+Situation;Situation;relatedSituation;Related situation;Reference to related situations via unique identifiers.;0..*;EAID_122DD9E2_B021_47dd_BCBC_F3F5E765BC75
+Situation;Situation;situationSummary;Situation summary;A SituationRecord that provides a summary of the information described by the corresponding Situation, i.e. a superset of at least the location and validity information of all (other) SituationRecords in this Situation. ;0..1;EAID_14358B9A_22CA_463c_ADA7_092CBB3D3E14
+Situation;SituationRecord;;;;1..1;EAID_A2A4DD9E_C635_48e4_8143_F444A0A0C335
+Situation;SituationRecord;;;;0..*;EAID_AC5B3818_EB8B_48d5_AEE7_E3C6362C9096
+Situation;SituationRecord;;;;0..1;EAID_5774578F_72F8_4cbc_818B_D7CA689E86FF
+Situation;SituationRecord;;;;1..1;EAID_7B9FCC60_B9BF_477c_81A5_657663A34BD8
+Situation;SituationRecord;;;;0..1;EAID_8069FF02_0B57_4564_90D1_E96616145F8E
+Situation;SituationRecord;generalPublicComment;General public comment;A comment which may be freely distributed to the general public;0..*;EAID_D1567E46_DCE8_4795_B382_79ADDBF24D6A
+Situation;SituationRecord;impact;Impact;Impact of the situation element;1..1;EAID_480D8D37_3A5F_40e4_AE70_E887E23D78C7
+Situation;SituationRecord;impactOnOppositeDirection;Impact on opposite direction;impact of the situation element on driving conditions in the opposite direction;0..1;EAID_480D8D37_3A5F_40e4_AE70_E887E23D78C7
+Situation;SituationRecord;informationManagerOverride;Information manager override;Organisation that manages the information content (is responsible for updates of this information) typically the organisation that first made the DATEX II publication of this content. This value overrides any value specified at a more general level.;0..1;EAID_89F74DD6_CCE5_45aa_93DA_A5DFCEE9D88E
+Situation;SituationRecord;nonGeneralPublicComment;Non general public comment;A comment which should not be distributed to the general public.;0..*;EAID_D1567E46_DCE8_4795_B382_79ADDBF24D6A
+Situation;PoorEnvironmentConditions;;;;0..1;EAID_DD58245B_12C7_4a62_A002_99FA681D3CE3
+Situation;WeatherRelatedRoadConditions;;;;0..1;EAID_C7A8510A_6710_4e1a_B423_D081E9524E8C
+LocationReferencing;GmlMultiPolygon;;;;1..*;EAID_F00FF3F2_71E8_42d4_989E_75F789570D1D
+LocationReferencing;GmlPolygon;exterior;Exterior;A boundary of a polygonal surface consisting of a ring i.e. in the normal 2D case, a closed polygonal line distinguished as exterior. Such a polygonal line has at least 4 pairs of coordinates;1..1;EAID_D8C0297D_8283_4fe7_96BA_7B6AEE74083D
+LocationReferencing;GmlPolygon;interior;Interior;A boundary of internal patches of a polygonal surface consisting of a ring feature;0..*;EAID_D8C0297D_8283_4fe7_96BA_7B6AEE74083D
+Situation;Impact;;;;1..1;EAID_D6E2CAAD_2468_4a67_97C4_C580C42B51B3
+LocationReferencing;LinearWithinLinearElement;;;;1..1;EAID_0CAB1F60_1F6C_4a88_BE21_EA256D99C2EC
+LocationReferencing;LinearWithinLinearElement;fromPoint;From point;A point on the linear element that defines the start node of the linear section.;1..1;EAID_91DF4D41_6E94_4701_A4FB_DE5DF4823E9C
+LocationReferencing;LinearWithinLinearElement;toPoint;To point;A point on the linear element that defines the end node of the linear section.;1..1;EAID_91DF4D41_6E94_4701_A4FB_DE5DF4823E9C
+LocationReferencing;AreaDestination;;;;1..1;EAID_DCD818AF_F632_4398_B250_6F24DCF858C2
+LocationReferencing;AreaLocation;;;;0..1;EAID_C98509A8_4A6B_4d6f_8727_96B6658F619C
+LocationReferencing;AreaLocation;;;;0..1;EAID_B468C916_637B_41bc_B5F9_1FC6F4777B29
+LocationReferencing;AreaLocation;;;;0..1;EAID_AD25D3CF_5DE3_4f5c_A4A0_10653D7D0F71
+LocationReferencing;AreaLocation;;;;0..1;EAID_DC6E8E84_2787_4e5c_9A29_588205E1511C
+LocationReferencing;AreaLocation;;;;0..*;EAID_2536A5ED_7484_4e8a_A1F9_2E5557A6C150
+LocationReferencing;Itinerary;routeDestination;Route destination;Destination of a route or final location in an itinerary.;0..*;EAID_42AEF70A_9AAE_43c8_BF44_6BA8C2A3DA75
+LocationReferencing;ItineraryByIndexedLocations;locationContainedInItinerary;Location contained in itinerary;A location contained in an itinerary (i.e. an ordered set of locations defining a route or itinerary).;1..1;EAID_8B6050E8_8BFC_4b0e_9354_4F0527307112
+LocationReferencing;LinearLocation;;;;0..1;EAID_6C63F590_D1E3_495c_8A34_D1E6988BC264
+LocationReferencing;LinearLocation;;;;0..1;EAID_3D271A89_15EA_45f8_B5B1_5F37E7FD9B10
+LocationReferencing;Location;;;;0..*;EAID_1F93F005_17BF_429c_A37E_8C2AE3D045B7
+LocationReferencing;Location;coordinatesForDisplay;Coordinates for display;Coordinates that may be used by clients for visual display on user interfaces.;0..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;NetworkLocation;;;;0..1;EAID_EB0BF15E_C269_4f69_86DC_94F1518CB8CC
+LocationReferencing;NetworkLocation;;;;0..1;EAID_42AEF70A_9AAE_43c8_BF44_6BA8C2A3DA75
+LocationReferencing;PointDestination;;;;1..1;EAID_600DDD49_C7B4_4f36_9D1B_E0151871D733
+LocationReferencing;PointLocation;;;;0..1;EAID_309597B5_B01D_4267_934A_D8B5EB945F61
+LocationReferencing;PointLocation;;;The point location expressed using AlertC. Multiple instances of AlertCPoint shall represent the same real-world geographic feature.;0..*;EAID_5E7A7C5A_0933_41f3_A636_E4EDA659DB2D
+LocationReferencing;PointLocation;;;;0..*;EAID_A0AE403B_AE08_40ff_9BFC_2D135A04B986
+LocationReferencing;PointLocation;;;;0..1;EAID_C13A89CB_0DF5_4fad_8035_570916B75787
+LocationReferencing;SingleRoadLinearLocation;;;The linear location expressed using AlertC. Multiple instances of AlertCLinear shall represent the same real-world geographic feature.;0..*;EAID_538DA6A1_280C_4b5f_8FFA_1CEDF0BA19C2
+LocationReferencing;SingleRoadLinearLocation;;;;0..*;EAID_37FEBD13_3C87_4f74_9C02_7B1FDA827EBE
+Situation;NetworkManagement;forVehiclesWithCharacteristicsOf;For vehicles with characteristics of;The characteristics of those vehicles for which the network management is applicable.;0..*;EAID_3E56124E_0654_4d2a_B78E_2C7C6A470500
+Situation;ReroutingManagement;;;The destination of the rerouting. Use this direct property when there is no detailed Itinerary available.;0..1;EAID_42AEF70A_9AAE_43c8_BF44_6BA8C2A3DA75
+Situation;ReroutingManagement;alternativeRoute;Alternative route;The definition of the alternative route (rerouting) specified as an ordered set of locations (itinerary) which may be specific to one or more defined destinations.;0..*;EAID_36407EEB_B4DB_4779_9908_A0DD512EF781
+Situation;Obstruction;mobilityOfObstruction;Mobility of obstruction;The mobility of the obstruction.;0..1;EAID_DC471947_184F_49a4_BDEC_EB9734EFC519
+Situation;VehicleObstruction;obstructingVehicle;Obstructing vehicle;The obstructing vehicle.;0..*;EAID_EED11672_97F8_47f5_8EE7_D8F41C785480
+LocationReferencing;OpenlrBaseReferencePoint;;;Properties of the line towards the topologically adjacent OpenLR location referencing point, on the shortest path to that point.;1..1;EAID_CBBDB09F_DA46_41df_BFD2_A180A5FD1A1F
+LocationReferencing;OpenlrBaseReferencePoint;openlrCoordinates;Openlr coordinates;Provides coordinates for the base point of the OpenLR path;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;OpenlrCircleLocationReference;;;;1..1;EAID_3A7607A1_396B_442a_B69F_EC6EE3FE1DB3
+LocationReferencing;OpenlrClosedLineLocationReference;;;;1..*;EAID_9A641638_46A7_402a_A4FA_6489D4453406
+LocationReferencing;OpenlrClosedLineLocationReference;openlrLastLine;Openlr last line;Provides the line attributes for the last line section closing the polygon.;1..1;EAID_9E2A540F_7B44_4184_B384_57142B33C6B3
+LocationReferencing;OpenlrGridLocationReference;;;;1..1;EAID_4163AEAC_54D7_45a7_B12F_B02060CDFB0E
+LocationReferencing;OpenlrPolygonCorners;openlrCoordinates;Openlr coordinates;Corresponding coordinates of vertices that define a polygon.;3..*;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;OpenlrPolygonLocationReference;;;;1..1;EAID_3FC9A7D7_EC91_4b9e_8098_17227980A192
+LocationReferencing;OpenlrRectangle;openlrLowerLeft;Openlr lower left;The lower left corner of the rectangle.;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;OpenlrRectangle;openlrUpperRight;Openlr upper right;The upper right corner of the rectangle.;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;OpenlrRectangleLocationReference;;;;1..1;EAID_4163AEAC_54D7_45a7_B12F_B02060CDFB0E
+LocationReferencing;OpenlrLinear;firstDirection;First direction;First OpenLR reference in first/main direction.;1..1;EAID_A69D4AC9_7311_4a06_BA44_5FA6953CFF31
+LocationReferencing;OpenlrLinear;oppositeDirection;Opposite direction;If both direction, this is the reference in the opposite direction against firstDirection.;0..1;EAID_A69D4AC9_7311_4a06_BA44_5FA6953CFF31
+LocationReferencing;OpenlrLineLocationReference;;;;1..1;EAID_9E2A540F_7B44_4184_B384_57142B33C6B3
+LocationReferencing;OpenlrLineLocationReference;;;;1..*;EAID_9A641638_46A7_402a_A4FA_6489D4453406
+LocationReferencing;OpenlrLineLocationReference;openlrOffsets;Openlr offsets;Allows for adding offsets to the line location path defined by nodes when the starting (respectively ending) point does not coincide with a node.;0..1;EAID_3BE4C9DB_84E9_4257_9541_CF6D372C46B9
+LocationReferencing;OpenlrBasePointLocation;;;Provides optional offsets relative to the path;0..1;EAID_3BE4C9DB_84E9_4257_9541_CF6D372C46B9
+LocationReferencing;OpenlrBasePointLocation;;;Allows defining the last point of the OpenLR path;1..1;EAID_9E2A540F_7B44_4184_B384_57142B33C6B3
+LocationReferencing;OpenlrBasePointLocation;;;Allows defining the first point of the OpenLR path;1..1;EAID_9A641638_46A7_402a_A4FA_6489D4453406
+LocationReferencing;OpenlrGeoCoordinate;openlrCoordinates;Openlr coordinates;Corresponding coordinates of an OpenLR point defined by its only coordinates.;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;OpenlrLocationReferencePoint;;;Additional path attributes relative to the next point;1..1;EAID_9B51D4F4_100F_465f_8FC4_F285402951DB
+LocationReferencing;OpenlrPoiWithAccessPoint;openlrCoordinates;Openlr coordinates;The coordinate of the actual point of interest;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;DistanceFromLinearElementReferent;fromReferent;From referent;A known location along the linear element from which the distanceAlong is measured, termed the "fromReferent" in EN ISO 19148. ;1..1;EAID_C52BC9A2_1CEB_4186_927B_D41F3E88464F
+LocationReferencing;DistanceFromLinearElementReferent;towardsReferent;Towards referent;A known location along the linear element towards which the distanceAlong is measured, termed the "towardsReferent" in EN ISO 19148.;0..1;EAID_C52BC9A2_1CEB_4186_927B_D41F3E88464F
+LocationReferencing;LinearElementByLineString;;;;1..1;EAID_3D271A89_15EA_45f8_B5B1_5F37E7FD9B10
+LocationReferencing;LinearElementByPoints;endPointOfLinearElement;End point of linear element;The referent at a known location on the linear object which defines the end of the linear element.;1..1;EAID_C52BC9A2_1CEB_4186_927B_D41F3E88464F
+LocationReferencing;LinearElementByPoints;intermediatePointOnLinearElement;Intermediate point on linear element;A referent at a known location on the linear object which is neither the start or end of the linear element.;1..1;EAID_C52BC9A2_1CEB_4186_927B_D41F3E88464F
+LocationReferencing;LinearElementByPoints;startPointOfLinearElement;Start point of linear element;The referent at a known location on the linear object which defines the start of the linear element.;1..1;EAID_C52BC9A2_1CEB_4186_927B_D41F3E88464F
+LocationReferencing;PointAlongLinearElement;;;;1..1;EAID_91DF4D41_6E94_4701_A4FB_DE5DF4823E9C
+LocationReferencing;PointAlongLinearElement;;;;1..1;EAID_0CAB1F60_1F6C_4a88_BE21_EA256D99C2EC
+LocationReferencing;Referent;;;;0..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;HeightCoordinate;;;;0..1;EAID_EA97E18E_D23D_48c8_9727_4726A3445AD1
+LocationReferencing;HeightCoordinate;verticalPositionAccuracy;Vertical position accuracy;Defines the vertical position accuracy according to EN16803-1;0..1;EAID_C6918D1E_4D05_4ac6_ADD3_45E2F2A744CF
+LocationReferencing;PointByCoordinates;;;;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;PointCoordinates;;;;0..3;EAID_53F9434E_2BC3_4b61_ABFA_3219C6DED8A9
+LocationReferencing;PointCoordinates;;;;0..1;EAID_DD314BF4_A2D6_4b44_BA57_9356E1CA18C5
+LocationReferencing;PointCoordinates;horizontalPositionAccuracy;Horizontal position accuracy;Defines the horizontal position accuracy according EN 16803-1;0..1;EAID_C6918D1E_4D05_4ac6_ADD3_45E2F2A744CF
+Situation;Roadworks;;;;0..1;EAID_DC471947_184F_49a4_BDEC_EB9734EFC519
+Situation;SituationPublication;;;;0..*;EAID_377430AF_6445_4a16_9877_6AE90C0E6F26
+LocationReferencing;Carriageway;;;;0..*;EAID_E48F56CA_7AE8_49f3_9BCA_2B1E2F69CCEE
+LocationReferencing;SupplementaryPositionalDescription;;;;0..*;EAID_EEB24F26_7F2A_4c5d_9728_578F931E4B51
+LocationReferencing;TpegAreaLocation;;;;0..1;EAID_F61C38F2_4558_4cb4_9653_5AC22731C686
+LocationReferencing;TpegGeometricArea;centrePoint;Centre point;Centre point of a circular geometric area.;1..1;EAID_46E260A6_C34E_43eb_B1D1_4BC0C63E224B
+LocationReferencing;TpegGeometricArea;name;Name;Name of area.;0..1;EAID_FF4CE13A_BDF7_4d4f_AB11_EB44967A067F
+LocationReferencing;TpegNamedOnlyArea;name;Name;Name of area.;1..*;EAID_FF4CE13A_BDF7_4d4f_AB11_EB44967A067F
+Common;OverallPeriod;validPeriod;Valid period;A single time period, a recurring time period or a set of different recurring time periods during which validity is true.;0..*;EAID_DC2B72A4_31FE_4cf5_B594_5EA8FFC4D072
+Common;Period;recurringDayWeekMonthPeriod;Recurring day week month period;A recurring period defined in terms of days of the week, weeks of the month and months of the year. ;0..*;EAID_1EAB8123_5A05_43d9_BFA2_3C4FD715B956
+Common;Period;recurringTimePeriodOfDay;Recurring time period of day;A recurring period of a day.;0..*;EAID_B811B137_C71E_4748_9A02_B3DD0134459C
+Common;Validity;validityTimeSpecification;Validity time specification;A specification of periods of validity defined by overall bounding start and end times and the possible intersection of valid periods with exception periods (exception periods overriding valid periods).;1..1;EAID_32B776D4_35CA_47a0_8E49_354460E5DE34
+Common;Vehicle;;;;0..1;EAID_3E56124E_0654_4d2a_B78E_2C7C6A470500
+Common;Vehicle;axleSpacingOnVehicle;Axle spacing on vehicle;The spacing between axles on the vehicles.;0..*;EAID_B456B531_C277_426b_A669_EBA0C3B69DAC
+Common;Vehicle;hazardousGoodsAssociatedWithVehicle;Hazardous goods associated with vehicle;Details of hazardous goods carried by the vehicle.;0..1;EAID_12EF50D5_57F3_44f0_AE26_3FE5078941B7
+Common;Vehicle;specificAxleWeight;Specific axle weight;The weight details relating to a specific axle on the vehicle.;0..*;EAID_2282EC07_36C2_431e_9FF0_511057C7E248
+Common;VehicleCharacteristics;;;;0..2;EAID_CF440CEA_5AE2_411b_889D_4F188DDCA136
+Common;VehicleCharacteristics;;;;0..2;EAID_65512B6E_83D8_4c46_ACFC_ED07639A0EC5
+Common;VehicleCharacteristics;;;;0..2;EAID_DD7B363C_90C2_46b1_948D_A0E1312867D5
+Common;VehicleCharacteristics;;;;0..2;EAID_87BC70D8_A16C_4b75_A917_523696EA9341
+Common;VehicleCharacteristics;;;;0..2;EAID_95314B2F_48FA_4731_AF68_B66ADC0E5CF2
+Common;VehicleCharacteristics;;;;0..2;EAID_8CF7AB8D_00E4_4427_9389_5C04E1797044
+Common;VehicleCharacteristics;;;;0..1;EAID_F82C4017_FC0E_4be3_A06F_681576B084D4
+Common;RoadSurfaceConditionMeasurements;friction;Friction;The friction value of the road.;0..1;EAID_696B4EA7_C829_49f6_A127_000AF0EAE50A
+Common;Visibility;minimumVisibilityDistance;Minimum visibility distance;The minimum distance, measured or estimated, beyond which drivers may be unable to clearly see a vehicle or an obstacle.;1..1;EAID_ECCC2012_8612_430b_B77E_EAB2791E7C6F
+

@@ -1,0 +1,29 @@
+Namespace;Datatype name;Facets;Definition
+LocationReferencing;AlertCLocationCode;<xs:minInclusive value='1'/><xs:maxInclusive value='63487'/>;A positive integer number (between 1 and 63 487) which uniquely identifies a pre-defined Alert C location defined within an Alert-C table.
+Common;AngleInDegrees;<xs:minInclusive value='0'/><xs:maxInclusive value='359'/>;An integer number representing an angle in whole degrees between 0 and 359.
+Common;Boolean;;Boolean has the value space required to support the mathematical concept of binary-valued logic: {true, false}. 
+Common;CountryCode;<xs:maxLength value='2'/>;EN ISO 3166-1 alpha-2 two-letter country code
+Common;CubicMetres;;A volumetric measure defined in cubic metres.
+Common;DateTime;;A combination of integer-valued year, month, day, hour, minute properties, a decimal-valued second property and a time zone property from which it is possible to determine the local time, the equivalent UTC time and the time zone offset from UTC.
+Common;Float;;A floating point number whose value space consists of the values m × 2^e, where m is an integer whose absolute value is less than 2^24, and e is an integer between -149 and 104, inclusive.
+LocationReferencing;GmlPosList;<xs:pattern value='[-+]?[0-9]*\.?[0-9]+(\s[-+]?[0-9]*\.?[0-9]+){3,}'/>;List of coordinates, space-separated, within the same coordinate reference system, defining a geometric entity. Modelled on DirectPositionListType in GML (EN ISO 19136), but constrained to represent a 2D or 3D polyline.
+Common;Integer;;An integer number whose value space is the set {-2147483648, -2147483647, -2147483646, ..., -2, -1, 0, 1, 2, ..., 2147483645, 2147483646, 2147483647}.
+Common;KilometresPerHour;;A measure of speed defined in kilometres per hour.
+Common;Language;;A language datatype, identifies a specified language by an ISO 639-1 2-alpha code.
+Common;MetresAsFloat;;A measure of distance defined in metres in a floating point format.
+Common;MetresAsNonNegativeInteger;;A measure of distance defined in metres in a non negative integer format.
+Common;MultilingualString;;A multilingual string, whereby the same text may be expressed in more than one language.
+Common;NonNegativeInteger;;An integer number whose value space is the set {0, 1, 2, ..., 2147483645, 2147483646, 2147483647}.
+LocationReferencing;NutsCode;<xs:maxLength value='5'/>;A NUTS code (Nomenclature of territorial units for statistics).
+Common;Percentage;;A measure of percentage.
+Common;Seconds;;Seconds.
+Common;String;<xs:maxLength value='1024'/>;A character string whose value space is the set of finite-length sequences of characters. Every character has a corresponding Universal Character Set code point (as defined in ISO/IEC 10646), which is an integer.
+LocationReferencing;SubdivisionCode;<xs:maxLength value='3'/>;The second part of an ISO 3166-2 country sub-division code (up to 3 characters) which may be used along with a CountryCode to make a full ISO 3166-2 subdivision code.
+Common;TemperatureCelsius;;A measure of temperature defined in degrees Celsius.
+Common;Time;;An instant of time that recurs every day. The value space of time is the space of time of day values as defined in § 5.3 of [ISO 8601]. Specifically, it is a set of zero-duration daily time instances.
+Common;Tonnes;;A measure of weight defined in metric tonnes.
+Common;Url;;A Uniform Resource Locator (URL) address comprising a compact string of characters for a resource available on the Internet.
+Common;VehiclesPerHour;;Vehicles per hour.
+Common;VersionedReference;;A reference to an identifiable version managed object where the combination of the identifier and version is unique. It comprises an identifier (e.g. UUID), a version (NonNegativeInteger) and a string identifying the class of the referenced object.
+Common;Year;;A year.
+

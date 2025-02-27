@@ -1,0 +1,41 @@
+Namespace;Package name;Definition
+Situation;Accident;Situations in which one or more vehicles lose control and do not recover. These include collisions between vehicle(s) or other road user(s), between vehicle(s) and obstacle(s), or the result of a vehicle running off the road.
+Situation;Activity;A collection of information relating to human activities external to the traffic stream or roadway which could disrupt traffic.
+LocationReferencing;AlertC;A collection of information describing locations using the Alert-C location referencing approach.
+LocationReferencing;AlertCArea;A collection of information describing area locations using the Alert-C location referencing approach.
+LocationReferencing;AlertCLinearByCode;A collection of information describing linear locations by use of specified location codes using the Alert-C location referencing approach.
+LocationReferencing;AlertCMethod2Linear;A collection of information describing linear locations by method 2 (defined primary and secondary locations) using the Alert-C location referencing approach.
+LocationReferencing;AlertCMethod2Point;A collection of information describing point locations by method 2 (defined primary and secondary locations) using the Alert-C location referencing approach.
+LocationReferencing;AlertCMethod4Linear;A collection of information describing linear locations by method 4 (defined primary and secondary locations and offset distances) using the Alert-C location referencing approach.
+LocationReferencing;AlertCMethod4Point;A collection of information describing point locations by method 4 (defined primary and secondary locations and offset distances) using the Alert-C location referencing approach.
+Common;Classes;A collection of data and information constructs used throughout the DATEX II model.
+Situation;Classes;A collection of data and information constructs that are used only in the Situation package of the DATEX II model.
+Situation;Conditions;A collection of information providing quantified measures that influence driving conditions, including metrological and road surface measures.
+Common;DataValue;A data value of something that can be measured or calculated.
+RoadTrafficData;DataValue;Data values of something that can be measured or calculated.
+LocationReferencing;Gml;Constructs modelling GML (ISO 19136) concepts
+Situation;Impact;A collection of data related to the impact of any form of event, incident or activity on the network. Provides qualitive and quantative measures describing the proportion of road space remaining.
+LocationReferencing;LinearWithinLinearElement;A collection of information for defining linear locations using reference points on a linear element that is a road.
+LocationReferencing;LocationReference;A collection of information related to specifying locations within a transportation network.
+LocationReferencing;NamedArea;A collection of information for defining area locations.
+Situation;NetworkManagement;Restrictions on road usage, whether by legal order or by operational decisions. It includes road and lane closures, weight and dimensional limits, banned turns, contraflows and alternate traffic operations.
+Situation;Obstruction;Information about obstacles or obstructions on or adjacent to the roadway, either of a stationary or moving nature, which may disrupt or endanger traffic.
+LocationReferencing;OpenLR;OpenLR
+LocationReferencing;OpenlrArea;OpenLR Area
+LocationReferencing;OpenlrLinear;OpenLRLinear
+LocationReferencing;OpenlrPoint;OpenLRPoint
+Situation;OperatorAction;Operator actions.
+LocationReferencing;PointAlongLinearElement;A collection of information for defining point locations using reference points on a linear element that is a road.
+LocationReferencing;PointCoordinates;Different classes needed for defining a point using coordiantes
+Situation;Roadworks;Road maintenance, installation and construction activities, works in the road, or other construction or maintenance actions that may affect normal operation of a road.
+Situation;ServiceInformation;A collection of information about events related to services, not traffic on the road, but which may influence the behaviour of drivers and hence the characteristics of traffic flow.
+Situation;SituationPublication;A collection of data relating to the publication of situation information.
+LocationReferencing;SupplementaryPositionalDescription;Package with constructs for supplementary descriptions to help identifiy locations
+LocationReferencing;TpegAreaLocation;A collection of information describing area locations using the TPEG-Loc location referencing approach.
+LocationReferencing;TpegDescriptor;A collection of information providing descriptive references to locations using the TPEG-Loc location referencing approach.
+Situation;TrafficElement;A collection of data providing information on an occurrence on the network on the network which is not planned by a traffic operator.
+Common;Validity;Specification of validity, either explicitly or by a validity time period specification which may be discontinous.
+Common;Vehicle;A collection of information providing measures relating to an individual vehicle.
+Common;VehicleCharacteristics;A collection of parameters which characterise a vehicle.
+Common;WeatherRelated;Weather related information.
+

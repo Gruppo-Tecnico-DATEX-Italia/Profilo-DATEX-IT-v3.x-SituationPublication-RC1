@@ -1,0 +1,85 @@
+Namespace;Enumeration name;Definition
+Situation;AbnormalTrafficTypeEnum;Descriptive terms for abnormal traffic conditions specifically relating to the nature of the traffic movement, implying levels of service.
+Situation;AccidentTypeEnum;Collection of descriptive terms for types of accidents.
+LocationReferencing;AlertCDirectionEnum;Direction used to reach the primary location from the secondary location in ALERT-C location table, as defined in CEN ISO 14819-1
+LocationReferencing;AltitudeAccuracyEnum;Coded level of vertical accuracy
+Situation;AnimalPresenceTypeEnum;Types of animal presence.
+LocationReferencing;AreaPlacesEnum;Type of area place(s)
+Situation;AuthorityOperationTypeEnum;Types of authority operations.
+LocationReferencing;CarriagewayEnum;List of descriptors identifying specific carriageway details.
+Situation;CauseTypeEnum;Types of causes of situations which are not managed or are off network.
+Situation;CollisionTypeEnum;Identifies a type of collision
+Situation;CommentTypeEnum;Classification of comment types.
+Common;ComparisonOperatorEnum;Logical comparison operations.
+Situation;ComplianceOptionEnum;Types of compliance.
+Common;ComputationMethodEnum;Types of computational methods used in deriving data values for data sets.
+Common;ConfidentialityValueEnum;Values of confidentiality.
+Situation;ConstructionWorkTypeEnum;Types of works relating to construction.
+Common;DangerousGoodsRegulationsEnum;Types of dangerous goods regulations.
+Common;DayEnum;Days of the week.
+LocationReferencing;DirectionEnum;List of directions of travel.
+Situation;DisturbanceActivityTypeEnum;Types of disturbance activities.
+Situation;DrivingConditionTypeEnum;Types of the perceived driving conditions.
+Common;EmissionClassificationEuroEnum;Classification of emission according to the Euro emission classification (based on serveral amendments on 1970 Directive 70/220/EEC). Note htat vehicleType as well as fuelType are mandatory to provide to make this classification explicit.
+CommonExtension;EmissionClassificationEuroEnumExtended;extension of the EmissionClassificationEuroEnum
+Situation;EnvironmentalObstructionTypeEnum;Types of environmental obstructions.
+Situation;EquipmentOrSystemFaultTypeEnum;Types of fault, malfunctioning or non operational conditions of equipment or systems.
+Situation;EquipmentOrSystemTypeEnum;Types of equipment and systems used to support the operation of the road network.
+Common;FuelTypeEnum;Type of fuel used by a vehicle.
+Situation;GeneralInstructionToRoadUsersTypeEnum;General instructions that may be issued to road users (specifically drivers and sometimes passengers) by an operator or operational system in support of network management activities or emergency situations.
+Situation;GeneralNetworkManagementTypeEnum;Types of network management actions.
+LocationReferencing;GeographicCharacteristicEnum;Descriptor to help to identify a specific location.
+LocationReferencing;HeightGradeEnum;List of height or vertical gradings of road sections.
+LocationReferencing;HeightTypeEnum;Coded value for type of height
+Common;InformationDeliveryServicesEnum;List of service channels or devices on which information or data exchanged can be delivered.
+Common;InformationStatusEnum;Status of the related information (i.e. real, test or exercise).
+Situation;InfrastructureDamageTypeEnum;Types of infrastructure damage which may have an effect on the road network.
+LocationReferencing;InfrastructureDescriptorEnum;Descriptor identifying infrastructure to help to identify a specific location.
+Situation;InjuryStatusTypeEnum;Types of injury status of people.
+LocationReferencing;LaneEnum;List of descriptors identifying specific lanes.
+LocationReferencing;LinearDirectionEnum;Directions of traffic flow relative to the direction in which the linear element is defined.
+LocationReferencing;LinearElementNatureEnum;List of indicative natures of linear elements.
+Common;LoadTypeEnum;Types of load carried by a vehicle.
+Common;LowEmissionLevelEnum;The emission level of a vehicle.
+Situation;MobilityTypeEnum;Types of mobility relating to a situation element defined by a SituationReord.
+LocationReferencing;NamedAreaTypeEnum;Types of areas.
+Situation;NonWeatherRelatedRoadConditionTypeEnum;Types of road surface conditions which are not related to the weather.
+LocationReferencing;NutsCodeTypeEnum;Types of NUTS codes (Nomenclature of territorial units for statistics) including LAU codes (Local Administrative Units).
+Situation;ObstructionTypeEnum;Types of obstructions on the roadway.
+LocationReferencing;OpenlrFormOfWayEnum;Enumeration of for of way
+LocationReferencing;OpenlrFunctionalRoadClassEnum;Enumeration of functional road class
+LocationReferencing;OpenlrOrientationEnum;Enumeration of orientation
+LocationReferencing;OpenlrSideOfRoadEnum;Enumeration of side of road
+Situation;PoorEnvironmentTypeEnum;Types of poor environmental conditions.
+LocationReferencing;PositionConfidenceCodedErrorEnum;Error code for horizontal or vertical position confidence
+Situation;ProbabilityOfOccurrenceEnum;Levels of confidence that the sender has in the information, ordered {certain, probable, risk of}.
+Common;PublicEventTypeEnum;Types of public events.
+LocationReferencing;ReferentTypeEnum;A set of types of known points along a linear object such as a road.
+Situation;ReroutingManagementTypeEnum;Management actions relating to rerouting.
+Situation;RoadMaintenanceTypeEnum;Types of road maintenance.
+Situation;RoadOperatorServiceDisruptionTypeEnum;Types of disruption to road operator services relevant to road users.
+Situation;RoadOrCarriagewayOrLaneManagementTypeEnum;Management actions relating to road, carriageway or lane usage.
+Situation;RoadsideAssistanceTypeEnum;Types of road side assistance.
+Situation;ServiceDisruptionTypeEnum;Types of disruption to services relevant to road users.
+Situation;SeverityEnum;Levels of severity of a situation as whole assessed by the impact that the situation may have on traffic flow as perceived by the supplier.
+Common;SourceTypeEnum;Type of sources from which situation information may be derived.
+Situation;SpeedManagementTypeEnum;Management actions relating to speed.
+LocationReferencing;SubdivisionTypeEnum;ISO 3166-2 subdivison types.
+LocationReferencing;TpegLoc01AreaLocationSubtypeEnum;Types of area.
+LocationReferencing;TpegLoc03AreaDescriptorSubtypeEnum;Descriptors for describing area locations.
+LocationReferencing;TpegLoc04HeightTypeEnum;Types of height.
+Situation;TrafficConstrictionTypeEnum;Types of constriction to which traffic is subjected as a result of an event.
+Situation;TrafficFlowCharacteristicsEnum;Types of consistency (steadiness) of traffic flow.
+Common;TrafficTrendTypeEnum;List of terms used to describe the trend in traffic conditions.
+Situation;TransitServiceInformationEnum;Types of public transport information.
+Common;UrlLinkTypeEnum;Types of URL links.
+Common;ValidityStatusEnum;Values of validity status that can be assigned to a described event, action or item.
+Common;VehicleEquipmentEnum;Types of vehicle equipment in use or on board.
+Situation;VehicleObstructionTypeEnum;Types of obstructions involving vehicles.
+Common;VehicleStatusEnum;The status of a vehicle.
+Common;VehicleTypeEnum;Types of vehicle.
+Common;VehicleUsageEnum;Types of usage of a vehicle.
+Common;WeatherRelatedRoadConditionTypeEnum;Types of road surface conditions which are related to the weather.
+Common;WeightTypeEnum;Type of weight - describing the meaning of a vehicle weight value
+Common;WinterEquipmentManagementTypeEnum;Instructions relating to the use of winter equipment.
+
